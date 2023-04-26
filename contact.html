@@ -12,7 +12,7 @@
 <body>
 
     <header class="header">
-        <h1 class="logo"><a href="./index.html"><img src="./imgs/logo.png" width="50px" height="50px"></a></h1>
+        <a class="logo" href="./index.html"><img src="./imgs/logo.png" width="50px" height="50px" alt="logo"></a>
         <ul class="main-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -45,14 +45,17 @@
                     <h2>Book Your Order</h2>
                     <br>
                     <label for="inputName">Your Name</label>
-                    <input type="text" placeholder="Enter Name" class="contact-field"><br>
+                    <input type="text" placeholder="Enter Name" class="contact-field" id="inputName"><br>
+
                     <label for="InputEmail">Enter Email</label>
-                    <input type="email" placeholder="Enter Email" class="contact-field"><br>
+                    <input type="email" placeholder="Enter Email" class="contact-field" id="InputEmail"><br>
                     <small>We'll never share your email with anyone
                         else.</small><br><br>
+
                     <label for="productCategory">Product</label>
-                    <input type="text" placeholder="Product Description..." class="contact-field"><br>
+                    <input type="text" placeholder="Product Description..." class="contact-field" id="productCategory"><br>
                     <small>We'll notify you via email the order details and instructions.</small><br><br>
+
                     <div class="submit-btn">
                         <a href="#" class="btn">SUBMIT</a>
                     </div>
