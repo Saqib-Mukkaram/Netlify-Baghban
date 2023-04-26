@@ -568,7 +568,7 @@ a {
   margin-bottom: 20px;
 }
 .footer #footer-grid .footer-item .footer-nav {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
 }
 .footer #footer-grid .footer-item .footer-nav img {
