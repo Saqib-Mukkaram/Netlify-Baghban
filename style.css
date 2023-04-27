@@ -552,9 +552,10 @@ a {
   color: #fff;
   padding: 30px;
   background-color: #438975;
+  width:fit-content
 }
 .footer #footer-grid {
-  display: grid;
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   grid-template-columns: repeat(3, 0.5fr);
