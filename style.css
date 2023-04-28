@@ -227,7 +227,7 @@ a {
 .main .product .service-grid-right ul .learn-more-btn a,
 .main .product .product-grid-left ul .learn-more-btn a {
   color: #ffff;
-  background-color: #438975;
+  background-color: #000;
   padding: 10px 16px;
   border-radius: 4px;
   font-size: 16px;
@@ -488,7 +488,7 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  background-color: #438975;
+  background-color: #000;
   cursor: pointer;
   outline: none;
 }
@@ -538,19 +538,19 @@ a {
   letter-spacing: 0.2em;
   padding: 10px 15px;
   color: #fff;
-  background-color: #438975;
+  background-color: #000;
   border-radius: 5px;
   text-decoration: none;
 }
 .contact-us .contact-grid form .submit-btn a:hover {
   color: #000;
-  background-color: #79b0a1;
+  background-color: #000;
 }
 
 .footer {
   color: #fff;
   padding: 30px;
-  background-color: #438975;
+  background-color: #000;
   width:fit-content
 }
 .footer #footer-grid {
@@ -579,7 +579,7 @@ a {
   border-right: 1px solid;
 }
 .footer .copyright {
-  background-color: #438975;
+  background-color: #000;
   padding-top: 20px;
 }
 
