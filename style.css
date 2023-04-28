@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
 }
@@ -253,18 +252,18 @@ a {
 }
 @media (max-width: 991px) {
   .team {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .team .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 390px);
+  grid-template-columns:auto auto;
   grid-gap: 5px;
   margin: 30px;
 }
 @media (max-width: 991px) {
   .team .team-grid {
-    grid-template-columns: repeat(3, 230px);
+    grid-template-columns: auto;
     grid-gap: 15px;
     margin: 0;
   }
@@ -366,17 +365,17 @@ a {
 }
 
 .services-section {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 30px auto;
 }
-@media (max-width: 991px) {
-  .services-section {
-    max-width: 100%;
-  }
+
+.services-section {
+  max-width: 100%;
 }
+
 .services-section .grid-service-section {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, 00.5fr);
   grid-gap: 20px;
 }
 .services-section .grid-service-section .card {
@@ -410,8 +409,8 @@ a {
   }
 }
 .product-section .wrapper {
-  height: 420px;
-  width: 654px;
+  max-height: 420px;
+  max-width: 654px;
   margin: 50px auto;
   border-radius: 7px 7px 7px 7px;
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -419,7 +418,7 @@ a {
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 .product-section .product-img {
-  float: left;
+  float: right;
   height: 20px;
   width: 327px;
 }
@@ -434,8 +433,8 @@ a {
   background-color: #ffffff;
 }
 .product-section .product-text {
-  height: 350px;
-  width: 300px;
+  max-height: 350px;
+  max-width: 300px;
 }
 .product-section .product-text h1 {
   margin: 0 0 0 38px;
@@ -504,15 +503,16 @@ a {
 
 .contact-us {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .contact-us .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, 0.6fr);
-  grid-gap: 40px;
+  grid-template-columns: auto;
+  grid-gap: 20px;
 }
 .contact-us .contact-grid form {
-  width: 100%;
+  max-width: 75%;
+  margin: 20px;
 }
 .contact-us .contact-grid form label {
   display: block;
@@ -552,7 +552,7 @@ a {
   color: #fff;
   padding: 30px;
   background-color: #000;
-  /* width:fit-content */
+  width: 100%;
 }
 .footer #footer-grid {
   display: flex;
@@ -565,7 +565,7 @@ a {
 .footer #footer-grid .footer-item .footer-logo {
   max-width: 150px;
   margin-right: 10px;
-  margin-left: 10px;
+
   margin-bottom: 20px;
 }
 .footer #footer-grid .footer-item .footer-nav {
