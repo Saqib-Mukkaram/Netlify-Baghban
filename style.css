@@ -365,8 +365,8 @@ a {
 }
 
 .services-section {
-  /* max-width: 1200px; */
-  margin: 30px auto;
+  max-width: 1200px;
+  margin: 30px 30px;
 }
 
 .services-section {
