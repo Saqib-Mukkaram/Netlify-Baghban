@@ -516,14 +516,14 @@ margin-left: 50px;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #d2d2d2;
+  color: #000;
   letter-spacing: 0.2em;
 }
 
 .product-section .product-text p {
   height: 125px;
   margin: 0 0 0 38px;
-  color: #8d8d8d;
+  color: #000;
   line-height: 1.7em;
   font-size: 15px;
   font-weight: lighter;
@@ -756,6 +756,11 @@ margin-left: 50px;
 
   }
   .product-text h1 {
+
+    color: #fff !important;
+
+  }
+  .product-text h2 {
 
     color: #fff !important;
 
