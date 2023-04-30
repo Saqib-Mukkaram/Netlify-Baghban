@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* ================================= 
+  Media Queries
+==================================== */
 body {
   margin: 0;
 }
@@ -14,7 +18,7 @@ a {
 }
 
 .logo {
-  margin: 0;
+  margin-left: 25px;
   font-size: 1.45em;
 }
 .logo a {
@@ -43,12 +47,8 @@ a {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border: 1px solid #a2a2a2;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  background-color: #f4f4f4;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -88,6 +88,7 @@ a {
 }
 @media (max-width: 768px) {
   .main .cover img {
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -98,7 +99,7 @@ a {
   left: 0;
   right: 0;
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
   transform: translate(0%, 48%);
 }
 .main .cover .cover-title .title {
@@ -109,10 +110,9 @@ a {
   text-transform: uppercase;
   margin: 0 auto;
   padding: 10px;
-  min-width: 20%;
-  max-width: 40%;
+  width: 15%;
   border-radius: 50px;
-  background-color: #000000b3;
+  background-color: rgba(0, 0, 0, 0.7019607843);
 }
 @media (max-width: 768px) {
   .main .cover .cover-title .title {
@@ -147,7 +147,8 @@ a {
 .main .services .product-grid-item img,
 .main .product .service-grid-item img,
 .main .product .product-grid-item img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 500px;
   width: 100%;
   max-width: 500px;
@@ -225,7 +226,7 @@ a {
 .main .services .product-grid-left ul .learn-more-btn a,
 .main .product .service-grid-right ul .learn-more-btn a,
 .main .product .product-grid-left ul .learn-more-btn a {
-  color: #ffff;
+  color: white;
   background-color: #000;
   padding: 10px 16px;
   border-radius: 4px;
@@ -252,23 +253,23 @@ a {
 }
 @media (max-width: 991px) {
   .team {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .team .team-grid {
   display: grid;
-  grid-template-columns:auto auto auto;
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 390px);
+  grid-gap: 5px;
   margin: 30px;
 }
 @media (max-width: 991px) {
   .team .team-grid {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(3, 230px);
     grid-gap: 15px;
     margin: 0;
   }
 }
-.team figure.aboutquote {
+.team figure.snip1139 {
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -280,30 +281,27 @@ a {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
-.team figure.aboutquote * {
-  -webkit-box-sizing: border-box;
+.team figure.snip1139 * {
   box-sizing: border-box;
-  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
-.team figure.aboutquote img {
+.team figure.snip1139 img {
   max-width: 100%;
   vertical-align: middle;
 }
-.team figure.aboutquote blockquote {
+.team figure.snip1139 blockquote {
   position: relative;
   background-color: #fff;
   padding: 25px 50px 25px 50px;
   font-size: 0.8em;
   font-weight: 500;
-  text-align: justify;
+  text-align: left;
   margin: 0;
   line-height: 1.6em;
   font-style: italic;
-  height: auto;
 }
-.team figure.aboutquote blockquote:before {
-  content: "\201C";
+.team figure.snip1139 blockquote:before {
+  content: "“";
   position: absolute;
   font-size: 50px;
   opacity: 0.3;
@@ -311,17 +309,17 @@ a {
   top: 25px;
   left: 20px;
 }
-.team figure.aboutquote blockquote:after {
-  content: "\201C";
+.team figure.snip1139 blockquote:after {
+  content: "“";
   position: absolute;
   font-size: 50px;
   opacity: 0.3;
   font-style: normal;
-  content: "\201D";
+  content: "”";
   right: 20px;
   bottom: 0;
 }
-.team figure.aboutquote .arrow {
+.team figure.snip1139 .arrow {
   top: 100%;
   width: 0;
   height: 0;
@@ -331,7 +329,7 @@ a {
   margin: 0;
   position: absolute;
 }
-.team figure.aboutquote .author {
+.team figure.snip1139 .author {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -341,12 +339,12 @@ a {
   margin: 0;
   text-transform: uppercase;
 }
-.team figure.aboutquote .author h5 {
+.team figure.snip1139 .author h5 {
   opacity: 0.8;
   margin: 0;
   font-weight: 800;
 }
-.team figure.aboutquote .author h5 span {
+.team figure.snip1139 .author h5 span {
   font-weight: 400;
   text-transform: none;
   padding-left: 5px;
@@ -361,34 +359,32 @@ a {
   padding: 20px;
   border-radius: 5px;
   background-color: #ffffff;
-  text-align: justify;
 }
 
 .services-section {
   max-width: 1200px;
-  margin: 30px 30px;
+  margin: 30px auto;
 }
-
-.services-section {
-  max-width: 100%;
+@media (max-width: 991px) {
+  .services-section {
+    max-width: 100%;
+  }
 }
-
 .services-section .grid-service-section {
   display: grid;
-  grid-template-columns: repeat(2, 00.5fr);
+  grid-template-columns: repeat(3, auto);
   grid-gap: 20px;
 }
 .services-section .grid-service-section .card {
   max-width: 350px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   margin-bottom: 10px;
 }
 .services-section .grid-service-section .card img {
   width: 100%;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .services-section .grid-service-section .card .card-title {
   padding: 20px;
@@ -405,16 +401,14 @@ a {
 }
 @media (max-width: 1350px) {
   .product-section .product-grid-section {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, auto);
   }
 }
 .product-section .wrapper {
-  max-height: 420px;
-  max-width: 654px;
+  height: 420px;
+  width: 654px;
   margin: 50px auto;
   border-radius: 7px 7px 7px 7px;
-  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 .product-section .product-img {
@@ -426,15 +420,15 @@ a {
   border-radius: 7px 0 0 7px;
 }
 .product-section .product-info {
-  float: right;
+  float: left;
   height: 420px;
   width: 327px;
   border-radius: 0 7px 10px 7px;
   background-color: #ffffff;
 }
 .product-section .product-text {
-  max-height: 350px;
-  max-width: 300px;
+  height: 300px;
+  width: 327px;
 }
 .product-section .product-text h1 {
   margin: 0 0 0 38px;
@@ -443,26 +437,26 @@ a {
   color: #474747;
 }
 .product-section .product-text h2 {
-  margin: 0 0 8px 38px;
+  margin: 0 0 47px 38px;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000;
+  color: #d2d2d2;
   letter-spacing: 0.2em;
 }
 .product-section .product-text p {
-  height: 200px;
-  margin: 0 0 5px 20px;
-  color: #000;
+  height: 125px;
+  margin: 0 0 0 38px;
+  color: #8d8d8d;
   line-height: 1.7em;
   font-size: 15px;
   font-weight: lighter;
-  text-align: justify;
   overflow: hidden;
 }
 .product-section .product-price-btn {
   height: 103px;
   width: 327px;
+  margin-top: 17px;
   position: relative;
 }
 .product-section .product-price-btn p {
@@ -487,7 +481,6 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #fff;
   background-color: #000;
   cursor: pointer;
   outline: none;
@@ -503,20 +496,20 @@ a {
 
 .contact-us {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 .contact-us .contact-grid {
   display: grid;
-  grid-template-columns: auto;
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 0.6fr);
+  grid-gap: 40px;
 }
 .contact-us .contact-grid form {
-  max-width: 75%;
-  margin: 20px;
+  width: 100%;
 }
 .contact-us .contact-grid form label {
   display: block;
   margin-bottom: 10px;
+  font-weight: 0;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -544,44 +537,73 @@ a {
   text-decoration: none;
 }
 .contact-us .contact-grid form .submit-btn a:hover {
-  color: #000;
-  background-color: #000;
+  color: #438975;
+  background-color: #79b0a1;
 }
 
 .footer {
   color: #fff;
   padding: 30px;
   background-color: #000;
-  width: 100%;
 }
-.footer #footer-grid {
+.footer{
   display: flex;
-  /* max-width: 1200px; */
   margin: 0 auto;
-  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-columns: repeat(2, 0.5fr);
   grid-gap: 30px;
-  margin-bottom: 20px;
+
 }
 .footer #footer-grid .footer-item .footer-logo {
   max-width: 150px;
   margin-right: 10px;
-
+  margin-left: 10px;
   margin-bottom: 20px;
 }
 .footer #footer-grid .footer-item .footer-nav {
   display: flex;
-  flex-direction: row;
+  margin: 20px;
 }
-.footer #footer-grid .footer-item .footer-nav img {
+.footer  .footer-item  img {
   margin-right: 10px;
   margin-left: 10px;
 }
-.footer #footer-grid .footer-item .footer-nav li {
+.footer #footer-grid .footer-item  li {
   border-right: 1px solid;
 }
 .footer .copyright {
+  display: block;
   background-color: #000;
   padding-top: 20px;
-}
+}/*# sourceMappingURL=style.css.map */
 
-/*# sourceMappingURL=style.css.map */
+.Testimonials {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 2rem;
+}
+.Testimonial {
+box-sizing: border-box;
+padding: 25px;
+border-radius: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testimonial-img {
+  width: 6.4rem;
+    border-radius: 25%;
+    height: 6.4rem;
+    object-fit:cover;
+
+  }
+
+.Testimonial-text {
+    line-height: 1;
+    margin-bottom: 1.6rem;
+    text-align: justify;
+    margin: 0;
+}
+.testimonial-name {
+  margin:20px 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: none; 
+}
