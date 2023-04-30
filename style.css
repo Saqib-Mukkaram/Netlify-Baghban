@@ -593,7 +593,6 @@ margin-left: 50px;
 .contact-us .contact-grid form label {
   display: block;
   margin-bottom: 12px;
-  font-weight: 0;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -706,7 +705,6 @@ margin-left: 50px;
   margin: 20px 30px;
   color: #000;
   text-transform: uppercase;
-  font-weight: none;
 }
 
 @media (max-width:991px) {
